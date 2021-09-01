@@ -49,7 +49,9 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
 
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+
+    var resultadoCuadrado = document.getElementById("resultadoCuadrado");
+    resultadoCuadrado.innerText = "El perimetro del cuadrado es de " + perimetro;
 }
 
 function calcularAreaCuadrado(){
@@ -57,7 +59,9 @@ function calcularAreaCuadrado(){
     const value = input.value;
 
     const area = areaCuadrado(value);
-    alert(area);
+
+    var resultadoCuadrado = document.getElementById("resultadoCuadrado");
+    resultadoCuadrado.innerText = "El area del cuadrado es de " + area;
 }
 
 function calcularPerimetroTriangulo(){
@@ -70,7 +74,9 @@ function calcularPerimetroTriangulo(){
     const value3 = parseInt(input3.value);
 
     const perimetro = perimetroTriangulo(value1, value2, value3);
-    alert(perimetro);
+    
+    var resultadoTriangulo = document.getElementById("resultadoTriangulo");
+    resultadoTriangulo.innerText = "El perimetro del triangulo es de " + perimetro;
 }
 
 function calcularAreaTriangulo(){
@@ -81,7 +87,9 @@ function calcularAreaTriangulo(){
     const value3 = input3.value;
 
     const area = areaTriangulo(value2,value3);
-    alert(area);
+    
+    var resultadoTriangulo = document.getElementById("resultadoTriangulo");
+    resultadoTriangulo.innerText = "El area del triangulo es de " + area;
 }
 
 function calcularPerimetroCirculo(){
@@ -89,7 +97,9 @@ function calcularPerimetroCirculo(){
     const value = parseInt(input.value);
 
     const perimetro = perimetroCirculo(value);
-    alert(perimetro);
+    
+    var resultadoCirculo = document.getElementById("resultadoCirculo");
+    resultadoCirculo.innerText = "El perimetro del circulo es de " + perimetro;
 }
 
 function calcularAreaCirculo(){
@@ -97,5 +107,7 @@ function calcularAreaCirculo(){
     const value = parseInt(input.value);
 
     const area = areaCirculo(value);
-    alert(area);
+    
+    var resultadoCirculo = document.getElementById("resultadoCirculo");
+    resultadoCirculo.innerText = "El area del circulo es de " + area;
 }
